@@ -57,7 +57,7 @@ function App() {
 
           <div className='w-[100%] flex justify-center items-center justify-items-center mt-2'>
             <input type="text" className="w-3/4 h-7 ml-3 p-1 rounded-lg text-black font-bold text-md" placeholder={password} readOnly />
-            <button className="ml-3 h-7 w-16 rounded-lg text-white bg-red-300 hover:bg-yellow-500 border-2 border-red-500" onClick={copyToClipboard}>Copy</button>
+            <button className="-ml-3 h-7 w-16 rounded-r-xl text-white bg-red-300 hover:bg-yellow-500" onClick={copyToClipboard}>Copy</button>
           </div>
 
           <div className='flex justify-center items-center font-normal flex-row mt-2  '>
