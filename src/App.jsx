@@ -51,12 +51,12 @@ function App() {
   return (
     <>
       <div className='w-screen bg-gradient-to-r from-green-400 to-blue-500 h-screen flex justify-center'>
-        
+
         <div className="text-center bg-green-500 text-olive kp-4 rounded-lg flex justify-center items-center w-[40%] h-[20%] flex-col font-Sans-serif text-xl text-shadow-lg shadow-black border-2 border-red-500 ">
           <label className='text-2xl font-bold'>Password Generator</label>
 
           <div className='w-[100%] flex justify-center items-center justify-items-center mt-2'>
-            <input type="text" className="w-3/4 h-7 ml-3 p-1 rounded-lg text-black font-bold text-md" placeholder={password} readOnly />
+            <input type="text" className="w-3/4 h-7 ml-3 p-1 rounded-lg text-black text-3" placeholder={password} readOnly />
             <button className="-ml-3 h-7 w-16 rounded-r-xl text-white bg-red-300 hover:bg-yellow-500" onClick={copyToClipboard}>Copy</button>
           </div>
 
@@ -73,7 +73,7 @@ function App() {
               <input
                 type="checkbox" className="ml-4 p-2 rounded-lg text-black" checked={includeChars}
                 onChange={(e) => setIncludeChars(e.target.checked)} />
-                <label> characters</label>
+              <label> characters</label>
             </div>
 
             <div>
@@ -82,12 +82,12 @@ function App() {
                 className="ml-4 p-2 rounded-lg text-black"
                 checked={includeSpecialChar}
                 onChange={(e) => setIncludeSpecialChar(e.target.checked)} />
-                <label> specialchar</label>
-             
+              <label> specialchar</label>
+
             </div>
 
             <div>
-              <input type="checkbox" className="ml-4 p-2 rounded-lg text-black" checked={includeNumbers} onChange={(e) => setIncludeNumbers(e.target.checked)} /> 
+              <input type="checkbox" className="ml-4 p-2 rounded-lg text-black" checked={includeNumbers} onChange={(e) => setIncludeNumbers(e.target.checked)} />
               <label> numbers</label>
             </div>
 
